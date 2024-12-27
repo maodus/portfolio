@@ -1,5 +1,6 @@
 import "./ProjectCard.css"
 import {CardInfo} from "../types/CardInfo"
+import SVGButton from "./SVGButton"
 
 export default function ProjectCard({
   title,
@@ -17,8 +18,20 @@ export default function ProjectCard({
       <div className="card-content">{children}</div>
       <div className="card-footer">
         <div className="card-links">
-          {demoLink && <button>Unimplemented</button>}
-          {repoLink && <button>Unimplemented</button>}
+          {repoLink && (
+            <SVGButton
+              text="GitHub"
+              icon="https://www.svgrepo.com/show/512317/github-142.svg"
+              destination={repoLink}
+            />
+          )}
+          {demoLink && (
+            <SVGButton
+              text="Showcase"
+              icon="https://www.svgrepo.com/show/513089/youtube-168.svg"
+              destination={demoLink}
+            />
+          )}
         </div>
       </div>
     </div>
