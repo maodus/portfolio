@@ -3,5 +3,5 @@ export type CardInfo = {
   icon: string
   demoLink?: string
   repoLink?: string
-  children?: React.ReactElement
+  children?: React.ReactElement | React.ReactElement[]
 }
