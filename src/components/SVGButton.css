@@ -1,0 +1,22 @@
+.svg-button {
+    width: fit-content;
+    background-color: #8ca0ff;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap:5px;
+    border-radius: 30px;
+    padding:10px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color:white;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* SVG image inside of our button */
+.svg-button img {
+    width: 1em;
+    height: 1em;
+}
