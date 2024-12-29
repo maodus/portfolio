@@ -1,6 +1,6 @@
 .svg-button {
     width: fit-content;
-    background-color: #8ca0ff;
+    background-color: #424853;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -13,10 +13,26 @@
     text-decoration: none;
     cursor: pointer;
     user-select: none;
+    opacity: 80%;
+    transition: opacity 0.5s; /* For hover opacity change */
 }
 
 /* SVG image inside of our button */
-.svg-button img {
+.svg-button-icon {
     width: 1em;
     height: 1em;
+}
+
+.svg-button-text {
+    opacity: 80%;
+    transition: opacity 0.5s; /* For hover opacity change */
+}
+
+/* Increase button opacity when hovered */
+.svg-button:hover {
+    opacity: 1;
+}
+
+.svg-button:hover .svg-button-text {
+    opacity: 1;
 }

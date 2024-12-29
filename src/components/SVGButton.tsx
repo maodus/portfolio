@@ -11,8 +11,8 @@ export default function SVGButton({
 }) {
   return (
     <a className="svg-button" href={destination} target="_blank">
-      <img src={icon}></img>
-      <span>{text}</span>
+      <img className="svg-button-icon" src={icon}></img>
+      <span className="svg-button-text">{text}</span>
     </a>
   )
 }
