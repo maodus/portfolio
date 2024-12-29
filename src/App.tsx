@@ -25,7 +25,7 @@ function App() {
           icon="https://www.svgrepo.com/show/375397/compute-engine.svg"
           title="Gazprea Compiler"
           demoLink="https://www.youtube.com/watch?v=Vz21xAF2bx8"
-          tech={["antlr", "c", "cpp"]}
+          tech={["antlr", "c", "cpp", "llvm"]}
         >
           <p>
             This closed-source compiler was built for{" "}
