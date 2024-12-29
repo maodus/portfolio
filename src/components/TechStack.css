@@ -1,0 +1,12 @@
+/* Holds the icons for our tech stack */
+.tech-container {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    gap: 8px;
+}
+
+/* Tech icon */
+.tech-svg {
+    width : 30px;
+}
