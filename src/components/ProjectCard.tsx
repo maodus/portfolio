@@ -1,12 +1,14 @@
 import "./ProjectCard.css"
 import {CardInfo} from "../types/CardInfo"
 import SVGButton from "./SVGButton"
+import TechStack from "./TechStack"
 
 export default function ProjectCard({
   title,
   icon,
   demoLink,
   repoLink,
+  tech,
   children,
 }: CardInfo) {
   return (
@@ -14,6 +16,11 @@ export default function ProjectCard({
       <div className="card-head">
         <img className="card-icon" src={icon} />
         <h2>{title}</h2>
+        {tech && (
+          <div style={{marginLeft: "auto"}}>
+            <TechStack tech={tech} />
+          </div>
+        )}
       </div>
       <div className="card-content">{children}</div>
       <div className="card-footer">
